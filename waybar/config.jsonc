@@ -1,0 +1,31 @@
+{
+    // Bar general settings
+    "layer":"top",
+    "position":"top",
+    "spacing":10,
+    "height":34,
+    "margin":"10 20 0 20",
+    "reload_style_on_change": true,
+
+    // Module positioning
+    "modeuls-left": [],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["clock", "custom/powerbtn"],
+    
+    /*****************************
+        Module configuration
+    ******************************/
+
+    "clock": {
+        "timezone": "Europe/Rome",
+        "interval": 60,
+        "format": "{:%H:%M} ",
+        "format-alt": "{:%d/%m/%Y} "
+    }
+
+    /*
+    "custom/powerbtn": {
+        "format": "󰐥"
+    }
+    */
+}
