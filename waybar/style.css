@@ -34,7 +34,6 @@ window#waybar {
 }
 
 #workspaces {
-    background-color: #212121;
     border-radius: 3em;
     padding: 0px 10px;
 }
@@ -54,5 +53,5 @@ window#waybar {
 
 #workspaces button.active {
     color: #a0a0a0;
-    background: rgba(0,0,0,.1);
+    background: rgba(0,0,0,.5);
 }

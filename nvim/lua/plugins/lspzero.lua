@@ -86,7 +86,6 @@ return {
                         local lspconfig = require('lspconfig')
                         lspconfig.tsserver.setup({
                             single_file_support = false,
-                            autostart = false
                         })
                     end,
                     lua_ls = function()
