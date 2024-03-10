@@ -1,0 +1,10 @@
+2024/03/09-19:15:39.632 1d1b5 Creating DB /home/pietroballarin/.config/Postman/Partitions/a3cc8f47-69f8-4c6e-9b39-eb0d852d6755/IndexedDB/file__0.indexeddb.leveldb since it was missing.
+2024/03/09-19:15:39.641 1d1b5 Reusing MANIFEST /home/pietroballarin/.config/Postman/Partitions/a3cc8f47-69f8-4c6e-9b39-eb0d852d6755/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2024/03/09-19:15:39.651 1d17a Level-0 table #5: started
+2024/03/09-19:15:39.654 1d17a Level-0 table #5: 492 bytes OK
+2024/03/09-19:15:39.658 1d17a Delete type=0 #3
+2024/03/09-19:15:39.658 1d17a Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/03/09-19:15:40.095 1d17a Level-0 table #7: started
+2024/03/09-19:15:40.099 1d17a Level-0 table #7: 477 bytes OK
+2024/03/09-19:15:40.103 1d17a Delete type=0 #4
+2024/03/09-19:15:40.104 1d17a Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)

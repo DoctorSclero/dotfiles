@@ -1,0 +1,2627 @@
+[2024-03-09 13:43:47.037] [silly] background.js loaded.
+2024/03/09 13:43:47:040 loglevel set: silly
+2024/03/09 13:43:47:042 loading database
+2024/03/09 13:43:47:042 creating database
+2024/03/09 13:43:47:079 database created
+2024/03/09 13:43:47:080 database loaded
+2024/03/09 13:43:48:227 loaded launcher.node
+2024/03/09 13:43:48:426 Default protocol set.
+2024/03/09 13:43:48:527 electron ready
+2024/03/09 13:43:48:531 local express server setup
+2024/03/09 13:43:48:599 updaterWindow created
+2024/03/09 13:43:48:599 updater file exists
+2024/03/09 13:43:48:623 updaterWindow listeners registered
+2024/03/09 13:43:48:623 initializing main window.
+2024/03/09 13:43:48:624 creating main window with settings {
+  title: 'Badlion Client',
+  backgroundColor: '#38434d',
+  resizable: true,
+  minWidth: 1200,
+  minHeight: 720,
+  width: 1200,
+  height: 900,
+  show: false,
+  frame: false,
+  titleBarStyle: 'default',
+  webPreferences: {
+    devTools: false,
+    preload: '/tmp/.mount_Badlionl93B3/resources/app.asar/app/preload.js'
+  },
+  icon: '/tmp/.mount_Badlionl93B3/resources/app.asar/app/64x64.png'
+}
+2024/03/09 13:43:48:627 main window created
+2024/03/09 13:43:48:628 loading main window url /tmp/.mount_Badlionl93B3/resources/app.asar/app/app.html
+2024/03/09 13:43:48:632 main window url loaded.
+2024/03/09 13:43:48:632 main window initialized.
+2024/03/09 13:43:48:633 old microsoft cookies removed
+2024/03/09 13:43:49:154 updater dom is ready to show
+2024/03/09 13:43:49:155 init auto updater
+2024/03/09 13:43:49:156 initializing autoupdater.
+2024/03/09 13:43:49:156 enableAutoupdaterLogger true, adding logger.
+2024/03/09 13:43:49:157 autoupdater logger added.
+2024/03/09 13:43:49:157 check for updates
+2024/03/09 13:43:49:157 Checking for update
+2024/03/09 13:43:49:157 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 13:43:49:157 checking-for-update sent to active window.
+2024/03/09 13:43:49:158 autoupdater initialized.
+2024/03/09 13:43:49:165 Generated new staging user ID: f7585bc6-fc90-5877-a8db-c5abe69c460a
+2024/03/09 13:43:49:188 updater window is ready to show
+2024/03/09 13:43:49:266 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 13:43:49:266 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 13:43:49:266 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: '[function] t=>{e.emit("browser-window-blur",t,this)}',
+    focus: '[function] t=>{e.emit("browser-window-focus",t,this)}',
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    'ready-to-show': '[function] () => {\n' +
+      "            logger__default['default'].info('updater window is ready to show');\n" +
+      '            if (!updaterWindowLoaded && updaterWindow) {\n' +
+      '                updaterWindowLoaded = true;\n' +
+      '                updaterWindow.show();\n' +
+      "                logger__default['default'].info('init auto updater');\n" +
+      '                initAutoUpdater();\n' +
+      '            }\n' +
+      '        }',
+    closed: '[function] () => {\n' +
+      '            // Close the main window too...shut down\n' +
+      '            if (!mainWindowPrompted) {\n' +
+      "                logger__default['default'].info('closing window since updater was prematurely killed');\n" +
+      '                if (launchApp) {\n' +
+      '                    launchApp.suicide(() => {\n' +
+      "                        logger__default['default'].info('done with C++ logic, quitting the application now');\n" +
+      '                        // Force kill ourselves here\n' +
+      '                        handleShutdown();\n' +
+      '                    });\n' +
+      '                }\n' +
+      '            }\n' +
+      '        }'
+  },
+  _eventsCount: 9,
+  devToolsWebContents: null
+}
+2024/03/09 13:43:49:267 update-not-available sent to active window.
+2024/03/09 13:43:49:268 finish check for updates {
+  versionInfo: {
+    version: '4.1.2',
+    files: [
+      {
+        url: 'BadlionClient',
+        sha512: 'Gd+rTPPNTzkudkG2/cV6gQVAM6y4Cp0oYj4fM6YIBbKyben0R+/Dxt8bE6Q7InkwWR8EFTUspbTUfF7DZrWjCQ==',
+        size: 160927047,
+        blockMapSize: 167259
+      }
+    ],
+    path: 'BadlionClient',
+    sha512: 'Gd+rTPPNTzkudkG2/cV6gQVAM6y4Cp0oYj4fM6YIBbKyben0R+/Dxt8bE6Q7InkwWR8EFTUspbTUfF7DZrWjCQ==',
+    releaseDate: '2024-03-05T14:52:51.488Z'
+  }
+}
+2024/03/09 13:43:49:268 no update available at this time
+2024/03/09 13:43:49:400 main window web contents dom ready
+2024/03/09 13:43:49:413 main window web contents ready to show
+2024/03/09 13:43:53:461 updater window still open, closing.
+2024/03/09 13:43:53:462 main window shown, focusing.
+2024/03/09 13:43:53:462 main window focused.
+2024/03/09 13:43:53:462 path to icon /tmp/.mount_Badlionl93B3/resources/app.asar/app/small/small.png
+2024/03/09 13:43:53:470 main window shown.
+2024/03/09 13:43:53:487 main window gained focus
+2024/03/09 13:43:54:687 main window lost focus
+2024/03/09 13:43:54:689 main window gained focus
+2024/03/09 13:43:54:935 main window lost focus
+2024/03/09 13:43:54:936 main window gained focus
+2024/03/09 13:43:56:898 main window lost focus
+2024/03/09 13:44:29:810 microsoft redirect url https://login.live.com/oauth20_desktop.srf?code=M.C525_BAY.2.U.814d7a3b-66fa-5161-58d7-c5c368fd636d&lc=1033
+2024/03/09 13:44:29:824 old microsoft cookies removed
+2024/03/09 13:44:29:842 main window gained focus
+2024/03/09 13:44:36:282 main window lost focus
+2024/03/09 13:44:37:853 messagebroker received data {"event":"minecraft_start"}
+2024/03/09 13:44:49:611 main window gained focus
+2024/03/09 13:44:49:751 main window lost focus
+2024/03/09 13:48:49:682 Checking for update
+2024/03/09 13:48:49:683 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 13:48:49:683 checking-for-update sent to active window.
+2024/03/09 13:48:49:726 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 13:48:49:727 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 13:48:49:727 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 13:48:49:728 update-not-available sent to active window.
+2024/03/09 13:53:49:669 Checking for update
+2024/03/09 13:53:49:669 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 13:53:49:670 checking-for-update sent to active window.
+2024/03/09 13:53:49:733 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 13:53:49:733 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 13:53:49:733 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 13:53:49:738 update-not-available sent to active window.
+2024/03/09 13:58:49:643 Checking for update
+2024/03/09 13:58:49:643 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 13:58:49:644 checking-for-update sent to active window.
+2024/03/09 13:58:49:691 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 13:58:49:692 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 13:58:49:693 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 13:58:49:697 update-not-available sent to active window.
+2024/03/09 14:03:49:631 Checking for update
+2024/03/09 14:03:49:631 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 14:03:49:631 checking-for-update sent to active window.
+2024/03/09 14:03:49:701 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 14:03:49:702 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 14:03:49:702 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 14:03:49:703 update-not-available sent to active window.
+2024/03/09 14:08:49:644 Checking for update
+2024/03/09 14:08:49:645 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 14:08:49:645 checking-for-update sent to active window.
+2024/03/09 14:08:49:707 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 14:08:49:708 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 14:08:49:708 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 14:08:49:710 update-not-available sent to active window.
+2024/03/09 14:13:49:640 Checking for update
+2024/03/09 14:13:49:641 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 14:13:49:641 checking-for-update sent to active window.
+2024/03/09 14:13:49:692 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 14:13:49:692 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 14:13:49:693 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 14:13:49:695 update-not-available sent to active window.
+2024/03/09 14:18:49:630 Checking for update
+2024/03/09 14:18:49:630 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 14:18:49:631 checking-for-update sent to active window.
+2024/03/09 14:18:49:683 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 14:18:49:683 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 14:18:49:684 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 14:18:49:684 update-not-available sent to active window.
+2024/03/09 14:23:49:648 Checking for update
+2024/03/09 14:23:49:649 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 14:23:49:649 checking-for-update sent to active window.
+2024/03/09 14:23:49:703 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 14:23:49:703 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 14:23:49:704 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 14:23:49:706 update-not-available sent to active window.
+2024/03/09 14:28:49:631 Checking for update
+2024/03/09 14:28:49:631 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 14:28:49:631 checking-for-update sent to active window.
+2024/03/09 14:28:49:676 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 14:28:49:676 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 14:28:49:677 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 14:28:49:677 update-not-available sent to active window.
+2024/03/09 14:33:49:631 Checking for update
+2024/03/09 14:33:49:631 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 14:33:49:631 checking-for-update sent to active window.
+2024/03/09 14:33:49:692 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 14:33:49:692 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 14:33:49:692 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 14:33:49:695 update-not-available sent to active window.
+2024/03/09 14:38:49:651 Checking for update
+2024/03/09 14:38:49:652 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 14:38:49:653 checking-for-update sent to active window.
+2024/03/09 14:38:49:745 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 14:38:49:746 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 14:38:49:747 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 14:38:49:751 update-not-available sent to active window.
+2024/03/09 14:43:49:634 Checking for update
+2024/03/09 14:43:49:634 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 14:43:49:634 checking-for-update sent to active window.
+2024/03/09 14:43:49:718 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 14:43:49:718 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 14:43:49:718 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 14:43:49:720 update-not-available sent to active window.
+2024/03/09 14:48:49:633 Checking for update
+2024/03/09 14:48:49:634 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 14:48:49:634 checking-for-update sent to active window.
+2024/03/09 14:48:49:743 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 14:48:49:744 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 14:48:49:744 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 14:48:49:745 update-not-available sent to active window.
+2024/03/09 14:53:49:631 Checking for update
+2024/03/09 14:53:49:631 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 14:53:49:631 checking-for-update sent to active window.
+2024/03/09 14:53:49:678 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 14:53:49:678 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 14:53:49:678 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 14:53:49:679 update-not-available sent to active window.
+2024/03/09 14:58:49:631 Checking for update
+2024/03/09 14:58:49:631 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 14:58:49:632 checking-for-update sent to active window.
+2024/03/09 14:58:49:680 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 14:58:49:680 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 14:58:49:681 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 14:58:49:681 update-not-available sent to active window.
+2024/03/09 15:03:49:631 Checking for update
+2024/03/09 15:03:49:631 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 15:03:49:631 checking-for-update sent to active window.
+2024/03/09 15:03:49:694 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 15:03:49:694 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 15:03:49:694 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 15:03:49:695 update-not-available sent to active window.
+2024/03/09 15:08:49:634 Checking for update
+2024/03/09 15:08:49:635 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 15:08:49:635 checking-for-update sent to active window.
+2024/03/09 15:08:49:695 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 15:08:49:696 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 15:08:49:696 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 15:08:49:697 update-not-available sent to active window.
+2024/03/09 15:13:49:632 Checking for update
+2024/03/09 15:13:49:633 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 15:13:49:633 checking-for-update sent to active window.
+2024/03/09 15:13:49:692 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 15:13:49:692 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 15:13:49:692 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 15:13:49:693 update-not-available sent to active window.
+2024/03/09 15:17:20:620 main window gained focus
+2024/03/09 15:17:20:921 main window lost focus
+2024/03/09 15:17:21:434 main window gained focus
+2024/03/09 15:17:21:698 main window lost focus
+2024/03/09 15:17:21:925 main window gained focus
+2024/03/09 15:17:22:087 main window lost focus
+2024/03/09 15:17:22:246 main window gained focus
+2024/03/09 15:17:22:519 main window lost focus
+2024/03/09 15:17:22:554 main window gained focus
+2024/03/09 15:17:22:752 main window lost focus
+2024/03/09 15:17:22:816 main window gained focus
+2024/03/09 15:17:22:978 main window lost focus
+2024/03/09 15:17:23:069 main window gained focus
+2024/03/09 15:17:23:230 main window lost focus
+2024/03/09 15:17:23:336 main window gained focus
+2024/03/09 15:17:23:492 main window lost focus
+2024/03/09 15:17:23:586 main window gained focus
+2024/03/09 15:17:23:750 main window lost focus
+2024/03/09 15:17:23:800 main window gained focus
+2024/03/09 15:17:24:195 main window lost focus
+2024/03/09 15:17:24:262 main window gained focus
+2024/03/09 15:17:24:439 main window lost focus
+2024/03/09 15:17:24:524 main window gained focus
+2024/03/09 15:17:24:669 main window lost focus
+2024/03/09 15:17:24:778 main window gained focus
+2024/03/09 15:17:24:904 main window lost focus
+2024/03/09 15:17:24:910 main window gained focus
+2024/03/09 15:17:24:928 main window lost focus
+2024/03/09 15:17:25:010 main window gained focus
+2024/03/09 15:17:25:140 main window lost focus
+2024/03/09 15:17:25:214 main window gained focus
+2024/03/09 15:17:25:349 main window lost focus
+2024/03/09 15:17:25:463 main window gained focus
+2024/03/09 15:17:25:567 main window lost focus
+2024/03/09 15:17:25:585 main window gained focus
+2024/03/09 15:17:25:621 main window lost focus
+2024/03/09 15:17:25:689 main window gained focus
+2024/03/09 15:17:25:810 main window lost focus
+2024/03/09 15:17:25:812 main window gained focus
+2024/03/09 15:17:25:849 main window lost focus
+2024/03/09 15:17:25:924 main window gained focus
+2024/03/09 15:17:26:035 main window lost focus
+2024/03/09 15:17:26:045 main window gained focus
+2024/03/09 15:17:26:080 main window lost focus
+2024/03/09 15:17:26:314 main window gained focus
+2024/03/09 15:17:26:444 main window lost focus
+2024/03/09 15:17:26:550 main window gained focus
+2024/03/09 15:17:26:666 main window lost focus
+2024/03/09 15:17:26:771 main window gained focus
+2024/03/09 15:17:26:904 main window lost focus
+2024/03/09 15:17:27:047 main window gained focus
+2024/03/09 15:17:27:185 main window lost focus
+2024/03/09 15:17:27:252 main window gained focus
+2024/03/09 15:17:27:253 main window lost focus
+2024/03/09 15:17:27:254 main window gained focus
+2024/03/09 15:17:27:431 handleShutdown called
+2024/03/09 15:17:27:437 main window closed, nulling.
+2024/03/09 15:17:27:437 main window nulled.
+2024/03/09 15:17:27:437 window-all-closed received, quitting.
+2024/03/09 15:17:27:438 before-quit received
+2024/03/09 15:17:27:438 will-quit received, quitting.
+[2024-03-09 21:23:09.273] [silly] background.js loaded.
+2024/03/09 21:23:09:276 loglevel set: silly
+2024/03/09 21:23:09:277 loading database
+2024/03/09 21:23:09:277 creating database
+2024/03/09 21:23:09:305 database created
+2024/03/09 21:23:09:306 database loaded
+2024/03/09 21:23:10:295 loaded launcher.node
+2024/03/09 21:23:10:487 Default protocol set.
+2024/03/09 21:23:10:589 electron ready
+2024/03/09 21:23:10:592 local express server setup
+2024/03/09 21:23:10:668 updaterWindow created
+2024/03/09 21:23:10:669 updater file exists
+2024/03/09 21:23:10:698 updaterWindow listeners registered
+2024/03/09 21:23:10:699 initializing main window.
+2024/03/09 21:23:10:699 creating main window with settings {
+  title: 'Badlion Client',
+  backgroundColor: '#38434d',
+  resizable: true,
+  minWidth: 1200,
+  minHeight: 720,
+  width: 1200,
+  height: 900,
+  show: false,
+  frame: false,
+  titleBarStyle: 'default',
+  webPreferences: {
+    devTools: false,
+    preload: '/tmp/.mount_Badlio8DailO/resources/app.asar/app/preload.js'
+  },
+  icon: '/tmp/.mount_Badlio8DailO/resources/app.asar/app/64x64.png'
+}
+2024/03/09 21:23:10:705 main window created
+2024/03/09 21:23:10:706 loading main window url /tmp/.mount_Badlio8DailO/resources/app.asar/app/app.html
+2024/03/09 21:23:10:711 main window url loaded.
+2024/03/09 21:23:10:711 main window initialized.
+2024/03/09 21:23:10:711 old microsoft cookies removed
+2024/03/09 21:23:11:231 updater dom is ready to show
+2024/03/09 21:23:11:233 init auto updater
+2024/03/09 21:23:11:234 initializing autoupdater.
+2024/03/09 21:23:11:234 enableAutoupdaterLogger true, adding logger.
+2024/03/09 21:23:11:235 autoupdater logger added.
+2024/03/09 21:23:11:235 check for updates
+2024/03/09 21:23:11:235 Checking for update
+2024/03/09 21:23:11:235 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 21:23:11:235 checking-for-update sent to active window.
+2024/03/09 21:23:11:236 autoupdater initialized.
+2024/03/09 21:23:11:265 updater window is ready to show
+2024/03/09 21:23:11:331 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 21:23:11:331 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 21:23:11:332 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: '[function] t=>{e.emit("browser-window-blur",t,this)}',
+    focus: '[function] t=>{e.emit("browser-window-focus",t,this)}',
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    'ready-to-show': '[function] () => {\n' +
+      "            logger__default['default'].info('updater window is ready to show');\n" +
+      '            if (!updaterWindowLoaded && updaterWindow) {\n' +
+      '                updaterWindowLoaded = true;\n' +
+      '                updaterWindow.show();\n' +
+      "                logger__default['default'].info('init auto updater');\n" +
+      '                initAutoUpdater();\n' +
+      '            }\n' +
+      '        }',
+    closed: '[function] () => {\n' +
+      '            // Close the main window too...shut down\n' +
+      '            if (!mainWindowPrompted) {\n' +
+      "                logger__default['default'].info('closing window since updater was prematurely killed');\n" +
+      '                if (launchApp) {\n' +
+      '                    launchApp.suicide(() => {\n' +
+      "                        logger__default['default'].info('done with C++ logic, quitting the application now');\n" +
+      '                        // Force kill ourselves here\n' +
+      '                        handleShutdown();\n' +
+      '                    });\n' +
+      '                }\n' +
+      '            }\n' +
+      '        }'
+  },
+  _eventsCount: 9,
+  devToolsWebContents: null
+}
+2024/03/09 21:23:11:333 update-not-available sent to active window.
+2024/03/09 21:23:11:333 finish check for updates {
+  versionInfo: {
+    version: '4.1.2',
+    files: [
+      {
+        url: 'BadlionClient',
+        sha512: 'Gd+rTPPNTzkudkG2/cV6gQVAM6y4Cp0oYj4fM6YIBbKyben0R+/Dxt8bE6Q7InkwWR8EFTUspbTUfF7DZrWjCQ==',
+        size: 160927047,
+        blockMapSize: 167259
+      }
+    ],
+    path: 'BadlionClient',
+    sha512: 'Gd+rTPPNTzkudkG2/cV6gQVAM6y4Cp0oYj4fM6YIBbKyben0R+/Dxt8bE6Q7InkwWR8EFTUspbTUfF7DZrWjCQ==',
+    releaseDate: '2024-03-05T14:52:51.488Z'
+  }
+}
+2024/03/09 21:23:11:333 no update available at this time
+2024/03/09 21:23:11:452 main window web contents dom ready
+2024/03/09 21:23:11:464 main window web contents ready to show
+2024/03/09 21:23:15:518 updater window still open, closing.
+2024/03/09 21:23:15:520 main window shown, focusing.
+2024/03/09 21:23:15:522 main window focused.
+2024/03/09 21:23:15:524 path to icon /tmp/.mount_Badlio8DailO/resources/app.asar/app/small/small.png
+2024/03/09 21:23:15:536 main window shown.
+2024/03/09 21:23:15:565 main window gained focus
+2024/03/09 21:23:15:572 main window lost focus
+2024/03/09 21:23:15:628 main window gained focus
+2024/03/09 21:23:18:863 messagebroker received data {"event":"minecraft_start"}
+2024/03/09 21:23:20:723 main window lost focus
+2024/03/09 21:28:11:700 Checking for update
+2024/03/09 21:28:11:701 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 21:28:11:701 checking-for-update sent to active window.
+2024/03/09 21:28:11:754 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 21:28:11:754 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 21:28:11:755 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 21:28:11:756 update-not-available sent to active window.
+2024/03/09 21:33:11:700 Checking for update
+2024/03/09 21:33:11:700 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 21:33:11:700 checking-for-update sent to active window.
+2024/03/09 21:33:11:741 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 21:33:11:741 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 21:33:11:741 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 21:33:11:742 update-not-available sent to active window.
+2024/03/09 21:38:11:687 Checking for update
+2024/03/09 21:38:11:687 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 21:38:11:687 checking-for-update sent to active window.
+2024/03/09 21:38:11:737 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 21:38:11:737 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 21:38:11:737 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 21:38:11:738 update-not-available sent to active window.
+2024/03/09 21:43:11:687 Checking for update
+2024/03/09 21:43:11:688 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 21:43:11:688 checking-for-update sent to active window.
+2024/03/09 21:43:11:741 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 21:43:11:741 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 21:43:11:741 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 21:43:11:742 update-not-available sent to active window.
+2024/03/09 21:48:11:686 Checking for update
+2024/03/09 21:48:11:686 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 21:48:11:686 checking-for-update sent to active window.
+2024/03/09 21:48:11:730 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 21:48:11:730 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 21:48:11:730 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 21:48:11:731 update-not-available sent to active window.
+2024/03/09 21:53:11:704 Checking for update
+2024/03/09 21:53:11:704 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 21:53:11:704 checking-for-update sent to active window.
+2024/03/09 21:53:11:748 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 21:53:11:748 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 21:53:11:748 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 21:53:11:749 update-not-available sent to active window.
+2024/03/09 21:58:11:686 Checking for update
+2024/03/09 21:58:11:687 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 21:58:11:687 checking-for-update sent to active window.
+2024/03/09 21:58:11:749 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 21:58:11:749 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 21:58:11:749 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 21:58:11:750 update-not-available sent to active window.
+2024/03/09 22:03:11:704 Checking for update
+2024/03/09 22:03:11:705 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 22:03:11:705 checking-for-update sent to active window.
+2024/03/09 22:03:11:747 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 22:03:11:747 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 22:03:11:747 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 22:03:11:748 update-not-available sent to active window.
+2024/03/09 22:08:11:686 Checking for update
+2024/03/09 22:08:11:686 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 22:08:11:687 checking-for-update sent to active window.
+2024/03/09 22:08:11:737 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 22:08:11:737 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 22:08:11:737 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 22:08:11:738 update-not-available sent to active window.
+2024/03/09 22:13:11:686 Checking for update
+2024/03/09 22:13:11:686 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 22:13:11:686 checking-for-update sent to active window.
+2024/03/09 22:13:11:747 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 22:13:11:747 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 22:13:11:748 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 22:13:11:749 update-not-available sent to active window.
+2024/03/09 22:18:11:685 Checking for update
+2024/03/09 22:18:11:685 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 22:18:11:685 checking-for-update sent to active window.
+2024/03/09 22:18:11:734 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 22:18:11:734 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 22:18:11:734 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 22:18:11:735 update-not-available sent to active window.
+2024/03/09 22:23:11:687 Checking for update
+2024/03/09 22:23:11:687 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 22:23:11:687 checking-for-update sent to active window.
+2024/03/09 22:23:11:734 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 22:23:11:735 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 22:23:11:735 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 22:23:11:736 update-not-available sent to active window.
+2024/03/09 22:28:11:691 Checking for update
+2024/03/09 22:28:11:691 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 22:28:11:692 checking-for-update sent to active window.
+2024/03/09 22:28:11:735 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 22:28:11:736 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 22:28:11:736 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 22:28:11:737 update-not-available sent to active window.
+2024/03/09 22:33:11:687 Checking for update
+2024/03/09 22:33:11:687 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 22:33:11:687 checking-for-update sent to active window.
+2024/03/09 22:33:11:736 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 22:33:11:736 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 22:33:11:736 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 22:33:11:737 update-not-available sent to active window.
+2024/03/09 22:38:11:686 Checking for update
+2024/03/09 22:38:11:686 autoUpdater checking-for-update received, sending checking-for-update to active window.
+2024/03/09 22:38:11:686 checking-for-update sent to active window.
+2024/03/09 22:38:11:738 Update for version 4.1.2 is not available (latest version: 4.1.2, downgrade is disallowed).
+2024/03/09 22:38:11:738 autoUpdater update-not-available received, sending update-not-available to active window.
+2024/03/09 22:38:11:738 activeWindow is {
+  setBounds: '[function] (e,...r)=>{e={...this.getBounds(),...e},t.call(this,e,...r)}',
+  _events: {
+    blur: [
+      '[function] t=>{e.emit("browser-window-blur",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window lost focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'lost-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = false;\n' +
+        '    }'
+    ],
+    focus: [
+      '[function] t=>{e.emit("browser-window-focus",t,this)}',
+      '[function] () => {\n' +
+        "        logger__default['default'].silly('main window gained focus');\n" +
+        '        if (mainWindow) {\n' +
+        "            mainWindow.webContents.send('window-focus', 'gain-focus');\n" +
+        '        }\n' +
+        '        // Flag analytics\n' +
+        '        mainWindowVisible = true;\n' +
+        '    }'
+    ],
+    show: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    hide: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    minimize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    maximize: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    restore: '[function] ()=>{const e=this.isVisible()&&!this.isMinimized();if(n!==e){n=e;const t=n?"visible":"hidden";this.webContents.emit("-window-visibility-change",t)}}',
+    close: '[function] function () {\n' +
+      '        if (!win.isMinimized() && !win.isMaximized()) {\n' +
+      '            Object.assign(state, getCurrentPosition());\n' +
+      '        }\n' +
+      '        try {\n' +
+      '            userDataDir.write(stateStoreFile, state, { atomic: true });\n' +
+      '        }\n' +
+      '        catch (e) {\n' +
+      "            logger__default['default'].error('failed to save state', e);\n" +
+      '        }\n' +
+      '    }',
+    'ready-to-show': '[function] () => {\n' +
+      "        logger__default['default'].silly('main window web contents ready to show');\n" +
+      '        if (!mainWindowLoaded) {\n' +
+      '            mainWindowLoaded = true;\n' +
+      '            // Setup message broker\n' +
+      '            registerMessageBroker(launchApp, mainWindow);\n' +
+      '        }\n' +
+      '    }',
+    closed: '[function] () => {\n' +
+      "        logger__default['default'].silly('main window closed, nulling.');\n" +
+      '        mainWindow = null;\n' +
+      "        logger__default['default'].silly('main window nulled.');\n" +
+      '        if (microsoftWindow) {\n' +
+      '            microsoftWindow.close();\n' +
+      '        }\n' +
+      '        if (newMicrosoftWindow) {\n' +
+      '            newMicrosoftWindow.close();\n' +
+      '        }\n' +
+      '    }'
+  },
+  _eventsCount: 10,
+  devToolsWebContents: null
+}
+2024/03/09 22:38:11:739 update-not-available sent to active window.
+2024/03/09 22:42:25:961 main window gained focus
+2024/03/09 22:42:26:930 main window lost focus
+2024/03/09 22:42:27:779 main window gained focus
+2024/03/09 22:42:30:240 main window lost focus
+2024/03/09 22:42:31:658 main window gained focus
+2024/03/09 22:42:33:828 main window lost focus
+2024/03/09 22:42:33:828 main window gained focus
+2024/03/09 22:42:34:146 messagebroker received data {"event":"minecraft_stop"}
+2024/03/09 22:42:34:246 messagebroker received data {"err":-100,"event":"launcher-error"}
+2024/03/09 22:42:34:517 main window lost focus
+2024/03/09 22:42:34:518 main window gained focus
+2024/03/09 22:42:38:129 handleShutdown called
+2024/03/09 22:42:38:137 main window closed, nulling.
+2024/03/09 22:42:38:137 main window nulled.
+2024/03/09 22:42:38:137 window-all-closed received, quitting.
+2024/03/09 22:42:38:137 before-quit received
+2024/03/09 22:42:38:138 will-quit received, quitting.

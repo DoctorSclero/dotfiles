@@ -1,0 +1,6 @@
+2024/03/09-18:50:31.185 18bbc Creating DB /home/pietroballarin/.config/Postman/Partitions/c3f768f6-681b-40e6-b92c-ae32766d6b96/IndexedDB/file__0.indexeddb.leveldb since it was missing.
+2024/03/09-18:50:31.194 18bbc Reusing MANIFEST /home/pietroballarin/.config/Postman/Partitions/c3f768f6-681b-40e6-b92c-ae32766d6b96/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2024/03/09-18:50:31.203 18bdb Level-0 table #5: started
+2024/03/09-18:50:31.206 18bdb Level-0 table #5: 492 bytes OK
+2024/03/09-18:50:31.210 18bdb Delete type=0 #3
+2024/03/09-18:50:31.210 18bdb Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

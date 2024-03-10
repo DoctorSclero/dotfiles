@@ -1,0 +1,20 @@
+2024/03/09-18:50:30.917 18bbc Creating DB /home/pietroballarin/.config/Postman/Partitions/c3f768f6-681b-40e6-b92c-ae32766d6b96/IndexedDB/https_desktop.postman.com_0.indexeddb.leveldb since it was missing.
+2024/03/09-18:50:30.927 18bbc Reusing MANIFEST /home/pietroballarin/.config/Postman/Partitions/c3f768f6-681b-40e6-b92c-ae32766d6b96/IndexedDB/https_desktop.postman.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/03/09-18:50:30.940 18bbc Level-0 table #5: started
+2024/03/09-18:50:30.943 18bbc Level-0 table #5: 2186 bytes OK
+2024/03/09-18:50:30.947 18bbc Delete type=0 #3
+2024/03/09-18:50:30.947 18bbc Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/03/09-18:50:31.469 18bdb Level-0 table #7: started
+2024/03/09-18:50:31.473 18bdb Level-0 table #7: 2045 bytes OK
+2024/03/09-18:50:31.478 18bdb Delete type=0 #4
+2024/03/09-18:50:31.478 18bdb Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/03/09-18:50:31.484 18bbc Level-0 table #9: started
+2024/03/09-18:50:31.488 18bbc Level-0 table #9: 507 bytes OK
+2024/03/09-18:50:31.492 18bbc Delete type=0 #6
+2024/03/09-18:50:31.492 18bbc Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at '\x00\x05\x00\x00\x05' @ 283 : 1
+2024/03/09-18:50:31.492 18bbc Compacting 1@0 + 1@1 files
+2024/03/09-18:50:31.496 18bbc Generated table #10@0: 111 keys, 1642 bytes
+2024/03/09-18:50:31.496 18bbc Compacted 1@0 + 1@1 files => 1642 bytes
+2024/03/09-18:50:31.500 18bbc compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/03/09-18:50:31.500 18bbc Delete type=2 #9
+2024/03/09-18:50:31.501 18bbc Manual compaction at level-0 from '\x00\x05\x00\x00\x05' @ 283 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)

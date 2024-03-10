@@ -1,0 +1,8 @@
+2024/03/09-19:16:18.434 1d46d Reusing MANIFEST /home/pietroballarin/.config/Postman/Partitions/f4a67c8e-a494-4bf5-94ba-533fb6f13a8e/IndexedDB/https_desktop.postman.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/03/09-19:16:18.434 1d46d Recovering log #8
+2024/03/09-19:16:18.436 1d46d Reusing old log /home/pietroballarin/.config/Postman/Partitions/f4a67c8e-a494-4bf5-94ba-533fb6f13a8e/IndexedDB/https_desktop.postman.com_0.indexeddb.leveldb/000008.log 
+2024/03/09-19:16:18.436 1d46d Delete type=2 #7
+2024/03/10-01:38:18.515 2a44c Compacting 1@1 + 1@2 files
+2024/03/10-01:38:18.518 2a44c Generated table #12@1: 75 keys, 1535 bytes
+2024/03/10-01:38:18.518 2a44c Compacted 1@1 + 1@2 files => 1535 bytes
+2024/03/10-01:38:18.522 2a44c compacted to: files[ 0 0 1 0 0 0 0 ]

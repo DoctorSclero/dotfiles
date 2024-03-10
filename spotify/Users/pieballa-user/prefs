@@ -1,1 +1,3 @@
+connect.dial_devices="[{\"address\":\"192.168.1.40\",\"app_state\":\"MISSING\",\"created_timestamp\":1709984473,\"device_id\":\"02e257db-5db5-47af-bd58-4bdeeb3fff49\",\"dial_location_url\":\"http://192.168.1.40:7678/nservice/\",\"display_name\":\"Samsung AU7170 43 TV\",\"last_seen\":1709985305,\"manufacturer\":\"Samsung\",\"model_name\":\"UE43AU7170UXZT\",\"product_cap\":\"Resolution:1920X1080,Tizen,Y2021\",\"public_ip\":\"87.9.191.221\",\"wol\":{\"all_interfaces\":false,\"delay_ms\":50,\"mac\":\"102b418bcc79\",\"port\":9,\"retries\":400}}]"
 audio.play_bitrate_non_metered_migrated=true
+app.player.volume=22549

@@ -1,0 +1,43 @@
+2024/03/09 13:43:49:274 isJavaUpdate called.
+2024/03/09 13:43:49:913 checkForJavaVersion called. res:  0
+2024/03/09 13:44:35:905 hasOptifineInstalled result 0
+2024/03/09 13:44:35:907 optifine already installed, launching client
+2024/03/09 13:44:37:367 checkForJarUpdates called: uuid, res:  b4a2c0c4-f6b6-4e6f-b5c1-46ea2e8e85c2 0
+2024/03/09 13:44:37:367 completed jarUpdate call
+2024/03/09 13:44:37:807 Badlion Assets are done updating
+2024/03/09 13:44:37:852 launchClient called: res:  0
+2024/03/09 13:44:37:854 Handling event minecraft_start
+2024/03/09 15:17:20:721 onbeforeunload received
+2024/03/09 15:17:21:570 onbeforeunload received
+2024/03/09 15:17:22:022 onbeforeunload received
+2024/03/09 15:17:22:518 onbeforeunload received
+2024/03/09 15:17:22:752 onbeforeunload received
+2024/03/09 15:17:22:922 onbeforeunload received
+2024/03/09 15:17:23:088 onbeforeunload received
+2024/03/09 15:17:23:456 onbeforeunload received
+2024/03/09 15:17:23:628 onbeforeunload received
+2024/03/09 15:17:23:815 onbeforeunload received
+2024/03/09 15:17:23:994 onbeforeunload received
+2024/03/09 15:17:24:182 onbeforeunload received
+2024/03/09 15:17:24:393 onbeforeunload received
+2024/03/09 15:17:24:614 onbeforeunload received
+2024/03/09 15:17:24:819 onbeforeunload received
+2024/03/09 15:17:25:013 onbeforeunload received
+2024/03/09 15:17:25:231 onbeforeunload received
+2024/03/09 15:17:25:483 onbeforeunload received
+2024/03/09 15:17:25:711 onbeforeunload received
+2024/03/09 15:17:25:965 onbeforeunload received
+2024/03/09 15:17:26:337 onbeforeunload received
+2024/03/09 15:17:27:155 onbeforeunload received
+2024/03/09 15:17:27:358 onbeforeunload received
+2024/03/09 21:23:11:342 isJavaUpdate called.
+2024/03/09 21:23:11:956 checkForJavaVersion called. res:  0
+2024/03/09 21:23:17:212 hasOptifineInstalled result 0
+2024/03/09 21:23:17:214 optifine already installed, launching client
+2024/03/09 21:23:18:485 checkForJarUpdates called: uuid, res:  b4a2c0c4-f6b6-4e6f-b5c1-46ea2e8e85c2 0
+2024/03/09 21:23:18:485 completed jarUpdate call
+2024/03/09 21:23:18:841 Badlion Assets are done updating
+2024/03/09 21:23:18:870 launchClient called: res:  0
+2024/03/09 21:23:18:870 Handling event minecraft_start
+2024/03/09 22:42:26:708 onbeforeunload received
+2024/03/09 22:42:34:154 Handling event minecraft_stop
