@@ -211,6 +211,7 @@ StEntry:focus {
 	background-color: rgba(21, 20, 18, 1);
 	font-size: inherit;
 	box-shadow: none;
+    margin: 5px;
 }
 
 /* panel in overview, lock screen */
