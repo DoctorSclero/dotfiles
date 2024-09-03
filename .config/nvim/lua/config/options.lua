@@ -1,5 +1,6 @@
 -- General settings
 vim.opt.relativenumber = true
+vim.opt.number = true
 vim.opt.compatible = false
 vim.opt.cursorline = true
 vim.opt.shiftwidth = 4
