@@ -40,12 +40,18 @@ return {
           ['<C-d>'] = cmp.mapping.scroll_docs(4),
           ['<C-f>'] = cmp_action.luasnip_jump_forward(),
           ['<C-b>'] = cmp_action.luasnip_jump_backward(),
+          ['<C-CR>'] = cmp.mapping.confirm({select=true})
         }),
         snippet = {
           expand = function(args)
             require('luasnip').lsp_expand(args.body)
           end,
         },
+        sources = cmp.config.sources({
+            { name = "luasnip" },
+            { name = "nvim-lsp" }
+        }),
+
       })
     end
   },
@@ -55,6 +61,7 @@ return {
     'neovim/nvim-lspconfig',
     cmd = {'LspInfo', 'LspInstall', 'LspStart'},
     event = {'BufReadPre', 'BufNewFile'},
+
     dependencies = {
       {'hrsh7th/cmp-nvim-lsp'},
       {'williamboman/mason-lspconfig.nvim'},
