@@ -1,0 +1,8 @@
+[general]
+import = [ "./tokyo-night-alacritty-theme/tokyo-night.toml" ]
+
+[font]
+size = 13.5
+normal = {family="Caskaydia Cove NFM", style="Regular"}
+bold = {family="Caskaydia Cove NFM", style="Bold"}
+italic = {family="Caskaydia Cove NFM", style="Italic"}
