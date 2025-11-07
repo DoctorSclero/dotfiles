@@ -167,12 +167,12 @@ configuration {
   }
 }
 
-textbox-prompt-colon {
-    enabled: false;
-}
-
 * {
     vertical-align: 0.5;
+}
+
+textbox-prompt-colon {
+    enabled: false;
 }
 
 prompt, entry, num-filtered-rows, num-rows, case-indicator {
@@ -187,14 +187,14 @@ prompt {
 
 window {
     border-radius: 1em;
-    background-color: #333333c0;
     border-color: #fff;
+    background-image: url("/home/pietroballarin/Pictures/Wallpapers/ghibli-blurry.jpg");
     padding: 0.7em;
     transparency: "real";
 }
 
 scrollbar {
-    handle-color: #aaa;
+    handle-color: #fff;
 }
 
 mainbox {
@@ -215,4 +215,8 @@ element {
 element normal.normal, element alternate.normal {
     background-color: transparent;
     text-color: #fff;
+}
+
+element selected.normal {
+    background-color: #ffffff20;
 }
