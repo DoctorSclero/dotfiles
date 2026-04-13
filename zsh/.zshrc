@@ -105,3 +105,5 @@ source $ZSH/oh-my-zsh.sh
 
 # IntelliJ IDEA Ultimate
 export PATH=/home/pietroballarin/Softwares/idea-IU-251.25410.129/bin:$PATH
+# Export default terminal
+export TERMINAL=/usr/bin/alacritty
