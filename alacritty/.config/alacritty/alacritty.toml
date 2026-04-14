@@ -2,7 +2,7 @@
 import = [ "./tokyo-night-alacritty-theme/tokyo-night.toml" ]
 
 [font]
-size = 10
-normal = {family="CaskaydiaMono Nerd Font Mono", style="Regular"}
-bold = {family="CaskaydiaMono Nerd Font Mono", style="Bold"}
-italic = {family="CaskaydiaMono Nerd Font Mono", style="Italic"}
+size = 12
+normal = {family="CaskaydiaCove Nerd Font Mono", style="Regular"}
+bold = {family="CaskaydiaCove Nerd Font Mono", style="Bold"}
+italic = {family="CaskaydiaCove Nerd Font Mono", style="Italic"}
